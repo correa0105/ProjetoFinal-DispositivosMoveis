@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".CadastroDobrasActivity">
+
+
+    <TextView
+        android:id="@+id/textNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nome do Usuario" />
+
+    <EditText
+        android:id="@+id/editData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="date"
+        android:hint="Data da Avaliação" />
+
+    <EditText
+        android:id="@+id/editDobraTriceps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Triceps" />
+
+    <EditText
+        android:id="@+id/editDobraSubescapular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Subescapular" />
+
+    <EditText
+        android:id="@+id/editDobraSuprailica"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Suprailica" />
+
+    <EditText
+        android:id="@+id/editDobraAbdominal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Abdominal" />
+
+    <Button
+        android:id="@+id/bntSalvarDobras"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:onClick="salvarAluno"
+        android:text="Salvar"
+        tools:layout_editor_absoluteX="77dp"
+        tools:layout_editor_absoluteY="103dp" />
+
+</LinearLayout>

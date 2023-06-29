@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/white"
+    >
+
+    <EditText
+        android:id="@+id/editNovoPeso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Digite o novo PESO" />
+
+    <Button
+        android:id="@+id/btnSalvarAluno"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:onClick="salvarPeso"
+        android:text="Salvar Peso" />
+
+</LinearLayout>
