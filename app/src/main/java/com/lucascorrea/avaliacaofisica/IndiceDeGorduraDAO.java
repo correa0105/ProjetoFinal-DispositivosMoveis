@@ -27,7 +27,7 @@ public class IndiceDeGorduraDAO {
 
         List<IndiceDeGordura> listaDeIndices = new ArrayList<>();
 
-        Cursor cursor = db.rawQuery("SELECT id, data, indiceBf FROM indices WHERE aluno_id = " + aluno.getId() + " ORDER BY data", null);
+        Cursor cursor = db.rawQuery("SELECT id, data, indiceBf FROM indices WHERE aluno_id = " + aluno.getId() + " ORDER BY strftime(data, '%d/%m/%Y')", null);
 
         if(cursor !=  null && cursor.getCount() > 0) {
             cursor.moveToFirst();
